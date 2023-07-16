@@ -1,0 +1,38 @@
+//Insertion at beginning-Doubly Linked List
+#include<stdio.h>
+#include<stdlib.h>
+struct node
+{
+    int data;
+    struct node *fnode;
+    struct node *bnode;
+};
+void insert(struct node **head,int data)
+{
+    struct node *new=malloc(sizeof(struct node));
+    new->data=data;
+    new->fnode=NULL;
+    new->bnode=NULL;
+    new->bnode=*head;
+    (*head)->fnode=new;
+    *head=new;
+}
+int main()
+{
+    printf("\n Insertion at the beginning");
+    struct node *head=malloc(sizeof(struct node));
+    head->data=10;
+    head->fnode=NULL;
+    head->bnode=NULL;
+    insert(&head,20);
+    insert(&head,30);
+    insert(&head,40);
+    struct node *temp=malloc(sizeof(struct node));
+    temp=head;
+    while(temp!=NULL)
+    {
+        printf("\n %d",temp->data);
+        temp=temp->bnode;
+    }
+    return 0;
+}
