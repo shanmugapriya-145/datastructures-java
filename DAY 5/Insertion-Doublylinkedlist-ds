@@ -4,17 +4,17 @@
 struct node
 {
     int data;
-    struct node *fnode;
-    struct node *bnode;
+    struct node *prev;
+    struct node *next;
 };
 void insert(struct node **head,int data)
 {
     struct node *new=malloc(sizeof(struct node));
     new->data=data;
-    new->fnode=NULL;
-    new->bnode=NULL;
-    new->bnode=*head;
-    (*head)->fnode=new;
+    new->prev=NULL;
+    new->next=NULL;
+    new->next=*head;
+    (*head)->prev=new;
     *head=new;
 }
 int main()
@@ -22,8 +22,8 @@ int main()
     printf("\n Insertion at the beginning");
     struct node *head=malloc(sizeof(struct node));
     head->data=10;
-    head->fnode=NULL;
-    head->bnode=NULL;
+    head->prev=NULL;
+    head->next=NULL;
     insert(&head,20);
     insert(&head,30);
     insert(&head,40);
@@ -32,7 +32,7 @@ int main()
     while(temp!=NULL)
     {
         printf("\n %d",temp->data);
-        temp=temp->bnode;
+        temp=temp->next;
     }
     return 0;
 }
