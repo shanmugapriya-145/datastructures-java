@@ -1,3 +1,4 @@
+//Merging the elements in the lists
 #include <stdio.h>
 int main() {
     int a[]={1,2,3};
