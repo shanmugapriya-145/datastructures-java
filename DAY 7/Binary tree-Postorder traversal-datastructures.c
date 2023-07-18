@@ -25,10 +25,10 @@ void Postorder(struct node* node)
 int main()
 {
     struct node* root = newnode(12);
-    root->left = newNode(24);
-    root->right = newNode(31);
-    root->left->left = newNode(14);
-    root->left->right = newNode(35);
+    root->left = newnode(24);
+    root->right = newnode(31);
+    root->left->left = newnode(14);
+    root->left->right = newnode(35);
     printf("Postorder traversal of binary tree is \n");
     Postorder(root);
     getchar();
