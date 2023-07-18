@@ -1,3 +1,4 @@
+//To print the greater value of any two numbers.
 import java.util.Scanner;
 class Program2 {
     public static void main(String[] args) {
