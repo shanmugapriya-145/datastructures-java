@@ -1,3 +1,4 @@
+//Minimum and maximum number using ternary operator
 #include<stdio.h>
 #include<stdlib.h>
 int main()
