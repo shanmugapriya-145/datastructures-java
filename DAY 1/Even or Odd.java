@@ -1,3 +1,4 @@
+//To print the number whether it is even or odd.
 import java.util.Scanner;
 class Program3 {
     public static void main(String[] args) {
