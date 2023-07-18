@@ -1,3 +1,4 @@
+//To print whether the sum of two numbers is even or odd.
 import java.util.Scanner;
 class Program4 {
     public static void main(String[] args) {
