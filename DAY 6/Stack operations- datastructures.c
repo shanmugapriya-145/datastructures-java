@@ -12,7 +12,7 @@ int main()
     while(1)
     {
         printf("\nSTACK OPERATIONS");
-        printf("\n1.Push the element\n2.Pop the element\n3.Display the elements\n");
+        printf("\n1.Push the element\n2.Pop the element\n3.Display the elements\n4.Quit\n");
         printf("\n\nEnter the choice:");
         scanf("%d", &ch);
         switch(ch)
