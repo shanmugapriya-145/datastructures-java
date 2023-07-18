@@ -1,3 +1,4 @@
+\\To print whether a number is positive,negative or zero.
 import java.util.Scanner;
 class Program1 {
     public static void main(String[] args) {
